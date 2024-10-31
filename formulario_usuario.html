@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Usuario</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Usuario</h1>
+    <form action="insertar_usuario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+        
+        <label for="id_rol">Rol:</label>
+        <select id="id_rol" name="id_rol" required>
+            <option value="1">Comprador</option>
+            <option value="2">Empleado</option>
+            <option value="3">Administrador</option>
+        </select><br><br>
+        
+        <input type="submit" value="Registrar Usuario">
+    </form>
+    
+</body>
+</html>
